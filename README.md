@@ -71,6 +71,39 @@ Organización Mundial de la Salud (OMS)
 Actividad física.
 https://www.who.int/es/news-room/fact-sheets/detail/physical-activity
 
+## Avance 2: Operaciones con operadores 
+
+En este avance se incorporan operaciones con operadores al proyecto "Conoce tus hábitos". Las operaciones permiten trabajar con los datos proporcionados por el usuario y obtener resultados relacionados con sus hábitos cotidianos.
+
+### Operaciones incorporadas 
+
+Para analizar los datos de los hábitos se incorporan operaciones de suma, resta, multiplicación y división.
+
+Sueño - resta
+**Sueño:** se utiliza la resta para calcular la diferencia entre las horas registradas y una referencia de 8 horas.
+`diferencia_sueno = 8 - horas_sueno`
+
+2. Actividad Física -resta 
+**Actividad física:** se utiliza la resta para calcular la diferencia entre los minutos registrados y una referencia de 60 minutos.
+
+`diferencia_actividad = 60 minutos_actividad`
+
+
+3. Hidratación - multiplicación
+**Hidratación:** se utiliza la multiplicación para calcular la cantidad aproximada de vasos de agua registrados durante una semana.
+
+`vasos_semana = vasos_agua * 7`
+
+4. Tiempo libre - multiplicación
+**Tiempo libre:** se utiliza la multiplicación para calcular las horas aproximadas de tiempo libre durante una semana.
+
+`horas_libre_semana = horas_libre * 7'
+
+5. Pantallas - multiplicación
+**Tiempo frente a pantallas:** se utiliza la multiplicación para calcular la cantidad aproximada de horas registradas frente a pantallas durante una semana.
+`horas_pantallas_semana = horas_pantalla * 7`
+
+
 
 
 
