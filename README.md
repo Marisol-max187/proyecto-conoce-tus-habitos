@@ -103,6 +103,27 @@ Sueño - resta
 **Tiempo frente a pantallas:** se utiliza la multiplicación para calcular la cantidad aproximada de horas registradas frente a pantallas durante una semana.
 `horas_pantallas_semana = horas_pantalla * 7`
 
+## Avance 3: Uso de Funciones
+En este avance se incorporan funciones al proyecto "Conoce tus hábitos". Las funciones permiten organizar las operaciones del programa en bloques de código reutilizables, haciendo que el programa sea más ordenado y fácil de comprender.
+
+### Funciones incorporadas
+
+Las funciones se utilizan para realizar los cálculos relacionados con los hábitos registrados por el usuario.
+
+Cada función recibe los datos necesarios, realiza una operación y devuelve un resultado.
+
+1. **Sueño:** calcula la diferencia entre las horas de sueño registradas y una referencia de 8 horas.
+
+2. **Actividad física:** calcula la diferencia respecto a una referencia de 60 minutos y convierte los minutos de actividad física a horas. También calcula las horas de actividad física registradas durante una semana.
+
+3. **Hidratación/Agua:** calcula la cantidad aproximada de vasos de agua registrados durante una semana.
+
+4. **Tiempo libre:** calcula las horas aproximadas de tiempo libre registradas durante una semana.
+
+5. **Pantallas:** calcula las horas aproximadas frente a pantallas registradas durante una semana.
+
+Las funciones permiten separar los cálculos del resto del programa y reutilizar los resultados obtenidos a partir de los datos ingresados por el usuario.
+
 
 
 
