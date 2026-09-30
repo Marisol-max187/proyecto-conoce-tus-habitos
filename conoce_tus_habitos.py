@@ -1,7 +1,48 @@
+ """Conoce tus hábitos
+
+Programa interactivo que registra datos sobre hábitos cotidianos
+y realiza cálculos relacionados con el sueño, actividad física,
+hidratación, tiempo libre y uso de pantallas.
+"""
+
 print("CONOCE TUS HÁBITOS")
 print()
 
-horas_sueno = float(input("¿Cuántas horas duermes normalmente por noche? "))
+def calcular_sueno(horas_sueno):
+    """Calcula la diferencia de horas de sueño respecto a 8 horas"""
+    diferencia_sueno = 8 - horas_sueno
+    return diferencia_sueno
+
+def calcular_actividad(minutos_actividad):
+    """Calcula diferencias y convierte la actividad a horas semanales."""
+    diferencia_actividad = 60 - minutos_actividad
+    horas_actividad = minutos_actividad / 60
+    horas_actividad_semana = horas_actividad * 7
+    return (
+        diferencia_actividad,
+            horas_actividad,
+            horas_actividad_semana
+        )
+
+def calcular_agua(vasos_agua):
+    """Calcula los vasos de agua registrados durante una semana."""
+    vasos_semana = vasos_agua * 7
+    return vasos_semana
+
+def calcular_tiempo_libre(horas_libre):
+    """Calcula las horas de tiempo libre registradas durante una semana."""
+    horas_libre_semana = horas_libre * 7
+    return horas_libre_semana
+
+def calcular_pantalla(horas_pantalla):
+    """calcula las horas de pantalla registradas durante una semana."""
+    horas_pantalla_semana = horas_pantalla * 7
+    return horas_pantalla_semana
+
+# Entrada de datos
+
+horas_sueno = float(input(
+    "¿Cuántas horas duermes normalmente por noche? "))
 
 minutos_actividad = float(input(
     "¿Cuántos minutos de actividad física realizas aproximadamente al día? "))
@@ -16,45 +57,42 @@ horas_pantalla = float(input(
     "¿Cuántas horas pasas aproximadamente frente a una pantalla "
     "fuera de tus actividades escolares? "))
 
-def calcular_sueno(horas_sueno):
-    diferencia_sueno = 8 - horas_sueno
-    return diferencia_sueno
+# Calculos
 
 diferencia_sueno = calcular_sueno(horas_sueno)
+    
 
-def calcular_actividad(minutos_actividad):
-    diferencia_actividad = 60 - minutos_actividad
-    horas_actividad = minutos_actividad / 60
-    horas_actividad_semana = horas_actividad * 7
-    return diferencia_actividad, horas_actividad, horas_actividad_semana
+(   
+diferencia_actividad,
+horas_actividad,
+horas_actividad_semana,
+) = calcular_actividad(minutos_actividad)
 
-diferencia_actividad, horas_actividad, horas_actividad_semana = calcular_actividad(minutos_actividad)
 
-def calcular_agua(vasos_agua):
-    vasos_semana = vasos_agua * 7
-    return vasos_semana
+
 
 vasos_semana = calcular_agua(vasos_agua)
 
-def calcular_tiempo_libre(horas_libre):
-    horas_libre_semana = horas_libre * 7
-    return horas_libre_semana
+
 
 horas_libre_semana = calcular_tiempo_libre(horas_libre)
 
-def calcular_pantalla(horas_pantalla):
-    horas_pantalla_semana = horas_pantalla * 7
-    return horas_pantalla_semana
+
 
 horas_pantalla_semana = calcular_pantalla(horas_pantalla)
 
 
 horas_actividad_y_libre = horas_actividad_semana + horas_libre_semana
 
+# Resultados
+
 print()
 print("RESULTADOS")
 print("Diferencia de sueño:", diferencia_sueno, "horas")
-print("Diferencia de actividad física:", diferencia_actividad, "minutos")
+print(
+    "Diferencia de actividad física:",
+    diferencia_actividad, "minutos"
+    )
 print("Horas de actividad física por día:", horas_actividad)
 print("Horas de actividad física por semana:", horas_actividad_semana)
 print("Vasos de agua registrados en una semana:", vasos_semana)
@@ -62,5 +100,6 @@ print("Horas de tiempo libre por semana:", horas_libre_semana)
 print("Horas de pantalla por semana:", horas_pantalla_semana)
 print(
     "Horas de actividad física y tiempo libre por semana:",
-    horas_actividad_y_libre)
+    horas_actividad_y_libre
+    )
 
