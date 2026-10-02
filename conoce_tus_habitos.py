@@ -1,4 +1,4 @@
- """Conoce tus hábitos
+"""Conoce tus hábitos
 
 Programa interactivo que registra datos sobre hábitos cotidianos
 y realiza cálculos relacionados con el sueño, actividad física,
@@ -83,6 +83,46 @@ horas_pantalla_semana = calcular_pantalla(horas_pantalla)
 
 
 horas_actividad_y_libre = horas_actividad_semana + horas_libre_semana
+
+# Decisión sobre el sueño
+if horas_sueno < 8:
+    print("Registraste menos de 8 horas de sueño.")
+elif horas_sueno == 8:
+    print("Registraste 8 horas de sueño.")
+else:
+    print("Registraste mas de 8 horas de sueño.")
+    
+# Decisión sobre la actividad física
+if minutos_actividad >= 60:
+    print("Registraste al menos 60 minutos de actividad física.")
+else:
+    print("Registraste menos de 60 minutos de actividad física.")
+    
+# Decisión sobre el registro de agua
+if vasos_agua >= 6:
+    print("Registraste 6 vasos de agua o más.")
+else:
+    print("Registraste menos de 6 vasos de agua.")
+    
+# Decisión sobre el tiempo libre
+if horas_libre >= 2:
+    print("Registraste 2 horas o más de tiempo libre al día.")
+else:
+    print("Registraste menos de 2 horas de tiempo libre al día.")
+
+# Decisión sobre el tiempo de pantalla
+if horas_pantalla > 4:
+    print("Registraste más de 4 horas de pantalla al día.")
+else:
+    print("Registraste 4 horas o menos de pantalla al día.")
+        
+    
+# Decisión combinada
+if horas_sueno >= 8 and minutos_actividad >= 60:
+    print("Tus registros cumplen las dos referencias.")
+else:
+    print("Uno o ambos registros están por debajo de la referencia.")
+    
 
 # Resultados
 
