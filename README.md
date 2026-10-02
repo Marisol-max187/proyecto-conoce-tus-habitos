@@ -124,7 +124,37 @@ Cada función recibe los datos necesarios, realiza una operación y devuelve un 
 
 Las funciones permiten separar los cálculos del resto del programa y reutilizar los resultados obtenidos a partir de los datos ingresados por el usuario.
 
+## Avance 4: Estructuras de decisión
 
+En este avance se incorporan estructuras de decisión al proyecto
+"Conoce tus hábitos". Estas estructuras permiten que el programa
+tome diferentes caminos dependiendo de los datos ingresados por
+el usuario.
+
+### Decisiones incorporadas
+
+- **Sueño:** utiliza `if`, `elif` y `else` para comparar las horas
+  registradas con una referencia de 8 horas.
+
+- **Actividad física:** utiliza `if` y `else` para comparar los
+  minutos registrados con una referencia de 60 minutos.
+
+- **Agua:** utiliza `if` y `else` para comparar el registro con una
+  referencia de 6 vasos.
+
+- **Tiempo libre:** utiliza `if` y `else` para comparar el registro
+  con una referencia de 2 horas.
+
+- **Tiempo de pantalla:** utiliza `if` y `else` para identificar si
+  el registro supera una referencia de 4 horas.
+
+- **Decisión combinada:** utiliza el operador lógico `and` para
+  comprobar dos condiciones al mismo tiempo.
+
+Estas decisiones permiten que el programa muestre diferentes
+mensajes dependiendo de las respuestas del usuario. Las cantidades
+utilizadas como referencias forman parte de la lógica del programa
+y no representan un diagnóstico médico.
 
 
 
