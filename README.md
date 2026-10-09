@@ -156,5 +156,18 @@ mensajes dependiendo de las respuestas del usuario. Las cantidades
 utilizadas como referencias forman parte de la lógica del programa
 y no representan un diagnóstico médico.
 
+## Avance 5: Estructuras de repetición
+
+En este avance se incorpora una estructura de repetición al proyecto
+"Conoce tus hábitos". Se utiliza el ciclo `while` para validar los
+datos ingresados por el usuario.
+
+El ciclo verifica si alguno de los datos registrados tiene un valor
+negativo. Si encuentra un dato no válido, muestra un mensaje y vuelve
+a solicitar el dato correspondiente. El ciclo continúa hasta que los
+datos cumplen con la condición establecida.
+
+De esta manera, el ciclo `while` permite que el programa repita una
+acción mientras exista un dato que deba corregirse.
 
 
