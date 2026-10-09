@@ -57,6 +57,36 @@ horas_pantalla = float(input(
     "¿Cuántas horas pasas aproximadamente frente a una pantalla "
     "fuera de tus actividades escolares? "))
 
+# Validación de datos con un ciclo
+while (
+    horas_sueno < 0
+    or minutos_actividad < 0
+    or vasos_agua < 0
+    or horas_libre < 0
+    or horas_pantalla < 0
+):
+    print("Los datos no pueden ser negativos.")
+    
+    if horas_sueno < 0:
+        horas_sueno = float(input(
+            "Ingresa nuevamente las horas de sueño: "))
+
+    if minutos_actividad < 0:
+        minutos_actividad = float(input(
+            "Ingresa nuevamente los minutos de actividad física: "))
+
+    if vasos_agua < 0:
+        vasos_agua = float(input(
+            "Ingresa nuevamente los vasos de agua: "))
+
+    if horas_libre < 0:
+        horas_libre = float(input(
+            "Ingresa nuevamente las horas de tiempo libre: "))
+
+    if horas_pantalla < 0:
+        horas_pantalla = float(input(
+            "Ingresa nuevamente las horas de pantalla: "))
+
 # Calculos
 
 diferencia_sueno = calcular_sueno(horas_sueno)
