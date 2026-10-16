@@ -86,6 +86,16 @@ while (
     if horas_pantalla < 0:
         horas_pantalla = float(input(
             "Ingresa nuevamente las horas de pantalla: "))
+        
+# Lista de hábitos registrados
+habitos = [
+    horas_sueno,
+    minutos_actividad,
+    vasos_agua,
+    horas_libre,
+    horas_pantalla
+]
+
 
 # Calculos
 
@@ -158,6 +168,7 @@ else:
 
 print()
 print("RESULTADOS")
+print("Lista de hábitos registrados:", habitos)
 print("Diferencia de sueño:", diferencia_sueno, "horas")
 print(
     "Diferencia de actividad física:",
