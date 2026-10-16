@@ -170,4 +170,14 @@ datos cumplen con la condición establecida.
 De esta manera, el ciclo `while` permite que el programa repita una
 acción mientras exista un dato que deba corregirse.
 
+## Avance 6: Listas (arreglos)
+
+En este avance se incorpora una lista al proyecto "Conoce tus hábitos" para organizar los datos ingresados por el usuario en una sola estructura.
+
+Se creó la lista `habitos`, que almacena las horas de sueño, los minutos de actividad física, los vasos de agua, las horas de tiempo libre y las horas de pantalla.
+
+Además, se muestra la lista en la sección de resultados para comprobar que los datos se guardan correctamente y mantienen el orden en que se solicitan al usuario.
+
+Con esta modificación, el programa utiliza una lista para almacenar información relacionada con los hábitos cotidianos.
+
 
