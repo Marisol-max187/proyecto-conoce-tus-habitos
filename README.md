@@ -180,4 +180,9 @@ Además, se muestra la lista en la sección de resultados para comprobar que los
 
 Con esta modificación, el programa utiliza una lista para almacenar información relacionada con los hábitos cotidianos.
 
+## Avance 7: Listas anidadas o matrices
+
+En este avance se incorpora una matriz al proyecto "Conoce tus hábitos". La matriz `matriz_habitos` está formada por listas internas que almacenan el nombre de cada hábito, el valor ingresado por el usuario y su unidad correspondiente.
+
+Esta estructura permite organizar la información relacionada con el sueño, la actividad física, el consumo de agua, el tiempo libre y el uso de pantallas. Además, se utiliza un ciclo for para recorrer las filas de la matriz y mostrar los datos de manera ordenada en los resultados del programa. 
 
