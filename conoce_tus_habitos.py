@@ -96,6 +96,14 @@ habitos = [
     horas_pantalla
 ]
 
+# Matriz de hábitos registrados
+matriz_habitos = [
+    ["Sueño", horas_sueno, "horas por noche"],
+    ["Actividad física", minutos_actividad, "minutos por día"],
+    ["Agua", vasos_agua, "vasos por día"],
+    ["Tiempo libre", horas_libre, "horas por día"],
+    ["Pantalla", horas_pantalla, "horas por día"]
+]
 
 # Calculos
 
@@ -169,6 +177,10 @@ else:
 print()
 print("RESULTADOS")
 print("Lista de hábitos registrados:", habitos)
+print()
+print("MATRIZ DE HÁBITOS")
+for habito in matriz_habitos:
+    print(habito[0], ":", habito[1], habito[2])
 print("Diferencia de sueño:", diferencia_sueno, "horas")
 print(
     "Diferencia de actividad física:",
