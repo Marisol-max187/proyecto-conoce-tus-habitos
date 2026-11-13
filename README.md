@@ -186,3 +186,11 @@ En este avance se incorpora una matriz al proyecto "Conoce tus hábitos". La mat
 
 Esta estructura permite organizar la información relacionada con el sueño, la actividad física, el consumo de agua, el tiempo libre y el uso de pantallas. Además, se utiliza un ciclo for para recorrer las filas de la matriz y mostrar los datos de manera ordenada en los resultados del programa. 
 
+## Avance 8: Manejo de cadenas
+
+En este avance se incorpora el manejo de cadenas al proyecto "Conoce tus hábitos". Se agregó una pregunta para solicitar el nombre del usuario y se utilizaron operaciones para modificar y presentar el texto ingresado.
+
+Se utiliza el método `strip()` para eliminar los espacios sobrantes al inicio y al final del nombre, y el método `title()` para colocar en mayúscula la primera letra de cada palabra. También se utiliza la concatenación de cadenas para mostrar un saludo personalizado.
+
+Con esta incorporación, el programa puede interactuar de una manera más personal con el usuario.
+
