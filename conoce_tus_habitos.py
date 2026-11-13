@@ -7,6 +7,13 @@ hidratación, tiempo libre y uso de pantallas.
 
 print("CONOCE TUS HÁBITOS")
 print()
+# Entrada y manejo del nombre
+nombre = input("¿Cómo te llamas? ")
+nombre = nombre.strip()
+nombre = nombre.title()
+
+print("¡Hola, " + nombre + "!")
+print()
 
 def calcular_sueno(horas_sueno):
     """Calcula la diferencia de horas de sueño respecto a 8 horas"""
@@ -176,6 +183,7 @@ else:
 
 print()
 print("RESULTADOS")
+print("Nombre del usuario:", nombre)
 print("Lista de hábitos registrados:", habitos)
 print()
 print("MATRIZ DE HÁBITOS")
