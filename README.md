@@ -194,3 +194,15 @@ Se utiliza el método `strip()` para eliminar los espacios sobrantes al inicio y
 
 Con esta incorporación, el programa puede interactuar de una manera más personal con el usuario.
 
+## Avance 9: Manejo de archivos
+
+En este avance se agregó el manejo de archivos al proyecto "Conoce tus hábitos".
+
+Se utiliza la función `open()` para crear o abrir un archivo de texto llamado `resultados_habitos.txt`, donde se guardan los datos del usuario, los hábitos registrados y los resultados obtenidos.
+
+También se utiliza `write()` para escribir la información en el archivo y `with` para trabajar con él de manera adecuada.
+
+El archivo se abre en modo `"a"`, por lo que los resultados de cada ejecución se agregan al final sin eliminar los registros anteriores.
+
+De esta manera, el programa permite conservar la información de los cuestionarios realizados.
+
