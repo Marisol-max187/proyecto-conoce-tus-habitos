@@ -204,3 +204,51 @@ print(
     horas_actividad_y_libre
     )
 
+# Guardar resultados en un archivo
+with open("resultados_habitos.txt", "a", encoding="utf-8") as archivo:
+    archivo.write("\n--- Nuevo cuestionario ---\n")
+    archivo.write("Nombre del usuario: " + nombre + "\n")
+
+    archivo.write("\nHábitos registrados:\n")
+
+    for habito in matriz_habitos:
+        archivo.write(
+            habito[0] + ": "
+            + str(habito[1]) + " "
+            + habito[2] + "\n"
+        )
+
+    archivo.write("\nResultados:\n")
+    archivo.write(
+        "Diferencia de sueño: "
+        + str(diferencia_sueno) + " horas\n"
+    )
+    archivo.write(
+        "Diferencia de actividad física: "
+        + str(diferencia_actividad) + " minutos\n"
+    )
+    archivo.write(
+        "Horas de actividad física por día: "
+        + str(horas_actividad) + "\n"
+    )
+    archivo.write(
+        "Horas de actividad física por semana: "
+        + str(horas_actividad_semana) + "\n"
+    )
+    archivo.write(
+        "Vasos de agua registrados en una semana: "
+        + str(vasos_semana) + "\n"
+    )
+    archivo.write(
+        "Horas de tiempo libre por semana: "
+        + str(horas_libre_semana) + "\n"
+    )
+    archivo.write(
+        "Horas de pantalla por semana: "
+        + str(horas_pantalla_semana) + "\n"
+    )
+    archivo.write(
+        "Horas de actividad física y tiempo libre por semana: "
+        + str(horas_actividad_y_libre) + "\n"
+    )
+
